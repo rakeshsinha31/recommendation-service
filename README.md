@@ -61,25 +61,44 @@ Folderstructure and what each file does.
 
 ```
 📦CYBERTRUST
- ┣ 📂recommender                         => Destination folder for all the auto created .js files
- ┃ ┃ 📂authapp                        => Source directory
+ ┣ 📂RECOMMENDER           => Django Project (Recommender Service)
+ ┃ ┃ 📂authapp              => Auth App
  ┃ ┣ ┣ ┣ 📂migrations
- ┃ ┃ ┃  ┣📜0001_initial.py           => Client to conect to mongodb database
- ┃ ┃ ┣ 📜admin.py                => Contains all the cities as object
- ┃ ┃ ┣ 📜apps.py      => Comume messages published by publish service
- ┃ ┃ ┗ 📜models.py                  => Entrypoint for the application
- ┃ ┃ ┗ 📜serializers.py     => Publish message to the message broker
- ┃ ┃ ┗ 📜urls.py
- ┃ ┃ ┗ 📜views.py     => Integrates extenal API
- ┣ ┃ ┗📂reconapp                        => Source directory
+ ┃ ┃ ┃  ┣📜0001_initial.py
+ ┃ ┃ ┣ 📜admin.py           => admin file
+ ┃ ┃ ┣ 📜apps.py            => app file
+ ┃ ┃ ┗ 📜models.py          => Models for authapp
+ ┃ ┃ ┗ 📜serializers.py     => auth serializer
+ ┃ ┃ ┗ 📜urls.py            => auth urls
+ ┃ ┃ ┗ 📜views.py           => auth view
+ ┣ ┃ ┗📂reconapp            => Recommendation App
  ┃ ┣ ┣ ┣ 📂migrations
- ┃ ┃ ┃  ┣📜0001_initial.py           => Client to conect to mongodb database
- ┃ ┃ ┣ 📜admin.py                => Contains all the cities as object
- ┃ ┃ ┣ 📜apps.py      => Comume messages published by publish service
- ┃ ┃ ┗ 📜models.py                  => Entrypoint for the application
- ┃ ┃ ┗ 📜serializers.py     => Publish message to the message broker
+ ┃ ┃ ┃  ┣📜0001_initial.py
+ ┃ ┃ ┣ 📜admin.py
+ ┃ ┃ ┣ 📜apps.py
+ ┃ ┃ ┗ 📜models.py
+ ┃ ┃ ┗ 📜serializers.py
  ┃ ┃ ┗ 📜urls.py
- ┃ ┃ ┗ 📜views.py                        => Configuration files
- ┣ 📜start.sh           => bash file to start apps
- ┣ 📜README.md                  => READ FILE
+ ┃ ┃ ┗ 📜views.py
+ ┣ 📂USERPRODUCT            => Django Project (UserProduct Service)
+ ┃ ┃ 📂transactions         => Transactions  App
+ ┃ ┣ ┣ ┣ 📂migrations
+ ┃ ┃ ┃  ┣📜0001_initial.py
+ ┃ ┃ ┣ 📜admin.py           => admin file
+ ┃ ┃ ┣ 📜apps.py            => app file
+ ┃ ┃ ┗ 📜models.py          => Models for authapp
+ ┃ ┃ ┗ 📜serializers.py     => auth serializer
+ ┃ ┃ ┗ 📜urls.py            => auth urls
+ ┃ ┃ ┗ 📜views.py           => auth view
+ ┣ ┃ ┗📂user                => Customer App
+ ┃ ┣ ┣ ┣ 📂migrations
+ ┃ ┃ ┃  ┣📜0001_initial.py
+ ┃ ┃ ┣ 📜admin.py
+ ┃ ┃ ┣ 📜apps.py
+ ┃ ┃ ┗ 📜models.py
+ ┃ ┃ ┗ 📜serializers.py
+ ┃ ┃ ┗ 📜urls.py
+ ┃ ┃ ┗ 📜views.py
+ ┣ 📜start.sh               => Entry point for both the projects
+ ┣ 📜README.md              => Ream Me
 ```
