@@ -1,0 +1,10 @@
+version: "3"
+services:
+  django:
+    image: user-product-service
+    build: .
+    command: ["python", "manage.py", "runserver", "0.0.0.0:8001"]
+    ports:
+      - "8001:8001"
+    deploy:
+      replicas: 2
