@@ -1,13 +1,32 @@
+## Description
+Product recommendation application, based on customer's transaction history.
+This repo contains two projects:
+
+1. Recommender:
+   This project has two applications - Auth and Recon. This exposes endpoints to:
+    - Register a user
+    - Login
+    - Recommend products for a given customer
+
+  
+2. User-Product:
+  This project has two applications - User and Product. This exposes endpoints to:
+    - Create a Customer
+    - Get all/single Customer profile
+    - Update Customer Profile
+    - Create a Product
+    - Get all/single Products
+    - Update a Product
+
+Usage:
+  See the Endpoints section
+
+
 ## Pre-requisites
 
 - Install Docker - [Docker >= 20.10.7](https://docs.docker.com/get-docker/)
 - Install Python - [Python >= 3.10.6](https://www.python.org/downloads/)
   <br/>
-
-## Start applications by running docker containers
-
-- cd /path/to/application/parent_folder <cybertrust>/
-- docker compose up
 
 ## Run Application Locally
 
@@ -53,12 +72,11 @@ POST:
 
 GET:
 
-- transactionapi/get_dataset/<id>/ (Transaction History)
+- transactionapi/get_dataset/<id: int>/ (Transaction History)
 
 ## Understanding Code Structure
 
-Folderstructure and what each file does.
-
+Folder structure and file description.
 ```
 📦CYBERTRUST
  ┣ 📂RECOMMENDER           => Django Project (Recommender Service)
