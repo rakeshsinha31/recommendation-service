@@ -1,6 +1,7 @@
 ## Description
 Product recommendation application, based on customer's transaction history.
-This repo contains two Microservices (Yeah! I know each MS should have its own repo :-( )
+This repo contains two Microservices (Yeah! I know each MS should have its own repo :-(, 
+it will be done as upcoming enhancement)
 
 1. Recommender:
    This project has two applications - Auth and Recon. This exposes endpoints to:
