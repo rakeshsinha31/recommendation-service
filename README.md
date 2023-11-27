@@ -1,16 +1,16 @@
 ## Description
 Product recommendation application, based on customer's transaction history.
-This repo contains two Microservices (Yeah! I know each MS should have its own repo :-(, 
-it will be done as upcoming enhancement)
+This repo contains two Microservices, running on separate PORTS (Yeah! I know each MS should have its own repo :-(, 
+it will be done as an upcoming enhancement)
 
-1. Recommender:
+1. Recommender (port: 8000):
    This project has two applications - Auth and Recon. This exposes endpoints to:
     - Register a user
     - Login
     - Recommend products for a given customer
 
   
-2. User-Product:
+2. User-Product (port: 8001):
   This project has two applications - User and Product. This exposes endpoints to:
     - Create a Customer
     - Get all/single Customer profile
