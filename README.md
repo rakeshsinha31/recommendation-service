@@ -3,6 +3,10 @@ Product recommendation application, based on customer's transaction history.
 This repo contains two Microservices, running on separate PORTS (Yeah! I know each MS should have its own repo :-(, 
 it will be done as an upcoming enhancement)
 
+The projects are orchestrated ``` using Docker & Docker Swarm ``` for Scalability and reliability.
+The Application doesn't support Auto Scaling. Kubernetes would have been a better option in that case, 
+but due to time constraints I have chosen to use Docker Swarm
+
 1. Recommender (port: 8000):
    This project has two applications - Auth and Recon. This exposes endpoints to:
     - Register a user
