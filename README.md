@@ -1,6 +1,6 @@
 ## Description
 Product recommendation application, based on customer's transaction history.
-This repo contains two projects:
+This repo contains two Microservices (Yeah! I know each MS should have its own repo :-( )
 
 1. Recommender:
    This project has two applications - Auth and Recon. This exposes endpoints to:
@@ -36,6 +36,7 @@ Usage:
 ## Endpoints
 
 RecommenderApp
+
 POST:
 
 - /authapi/register
@@ -66,6 +67,7 @@ GET:
 - /customerapi/products/<id>/
 
 Transaction APIs
+
 POST:
 
 - /transactionapi/create-transaction/1/
