@@ -35,7 +35,8 @@ Usage:
 
 ## Run Application Locally
 
-- cd /path/to/application/parent_folder <cybertrust>/
+- git clone https://github.com/rakeshsinha31/recommendation-service.git
+- cd recommendation-service/
 - ./start.sh
 
 ## Endpoints
